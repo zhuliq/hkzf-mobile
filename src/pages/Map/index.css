@@ -1,0 +1,132 @@
+@keyframes houseList {
+  from {
+    height: 0;
+  }
+  to {
+    height: calc((100% - 100px)/2);
+  }
+}
+@keyframes closeHouseList {
+  from {
+    height: calc((100% - 100px)/2);
+  }
+  to {
+    height: 0;
+  }
+}
+body {
+  height: 100%;
+}
+#container {
+  width: 100%;
+  height: calc(100% - 100px);
+}
+.houseList-Wrap {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 999;
+}
+.houseList-Wrap .houseListTitle {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  width: 100%;
+  background-color: #d0d0d0;
+}
+.houseList-Wrap .houseListTitle .houseListTitle-Left {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 100px;
+  margin-left: 30px;
+}
+.houseList-Wrap .houseListTitle .houseListTitle-Right {
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 100px;
+  margin-right: 30px;
+}
+.houseList-Wrap .houseListContent {
+  overflow-y: scroll;
+}
+.houseList-Wrap .houseListContent .houseList {
+  display: flex;
+  justify-content: space-evenly;
+  height: 200px;
+  width: 100%;
+  margin: 30px 0;
+}
+.houseList-Wrap .houseListContent .houseList .houseListItem-Left {
+  height: 100%;
+}
+.houseList-Wrap .houseListContent .houseList .houseListItem-Left img {
+  height: 100%;
+}
+.houseList-Wrap .houseListContent .houseList .houseListItem-Right {
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: -20px;
+}
+.houseList-Wrap .houseListContent .houseList .houseListItem-Right .houseListItem-Right-Title {
+  font-size: 35px;
+  font-weight: 550;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.houseList-Wrap .houseListContent .houseList .houseListItem-Right .houseListItem-Right-Desc {
+  font-size: 25px;
+  color: #afafaf;
+}
+.houseList-Wrap .houseListContent .houseList .houseListItem-Right .houseListItem-Right-Tags {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+.houseList-Wrap .houseListContent .houseList .houseListItem-Right .houseListItem-Right-Tags .tag {
+  white-space: nowrap;
+  font-size: 25px;
+  font-weight: 500;
+  margin-right: 20px;
+  padding: 2px 10px;
+}
+.houseList-Wrap .houseListContent .houseList .houseListItem-Right .houseListItem-Right-Tags .tagStyle-0 {
+  background-color: #68fdfd;
+  color: #08ada5;
+}
+.houseList-Wrap .houseListContent .houseList .houseListItem-Right .houseListItem-Right-Tags .tagStyle-1 {
+  background-color: #abf4c3;
+  color: #3ea169;
+}
+.houseList-Wrap .houseListContent .houseList .houseListItem-Right .houseListItem-Right-Tags .tagStyle-2 {
+  background-color: #e6bcfd;
+  color: #9d00ff;
+}
+.houseList-Wrap .houseListContent .houseList .houseListItem-Right .houseListItem-Right-Tags .tagStyle-3 {
+  background-color: #faedb2;
+  color: #f0c904;
+}
+.houseList-Wrap .houseListContent .houseList .houseListItem-Right .houseListItem-Right-Tags .tagStyle-4 {
+  background-color: #ffc5c8;
+  color: #fe0404;
+}
+.houseList-Wrap .houseListContent .houseList .houseListItem-Right .houseListItem-Right-Price {
+  display: flex;
+  font-size: 25px;
+  color: #d01111;
+  align-items: flex-end;
+}
+.houseList-Wrap .houseListContent .houseList .houseListItem-Right .houseListItem-Right-Price .priceNum {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0;
+}
+.houseList-Wrap .houseListContent hr {
+  width: 90%;
+}

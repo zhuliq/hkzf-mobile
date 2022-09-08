@@ -1,0 +1,58 @@
+{
+  "id": "2876339",
+  "name": "iconfont",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "476650",
+      "name": "icon-indexnor",
+      "font_class": "iconindexnor",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "4682542",
+      "name": "find",
+      "font_class": "find",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "15838429",
+      "name": "arrow-down",
+      "font_class": "arrow-down",
+      "unicode": "e665",
+      "unicode_decimal": 58981
+    },
+    {
+      "icon_id": "4765721",
+      "name": "check-circle",
+      "font_class": "check-circle",
+      "unicode": "e77d",
+      "unicode_decimal": 59261
+    },
+    {
+      "icon_id": "4765728",
+      "name": "left-circle",
+      "font_class": "left-circle",
+      "unicode": "e77f",
+      "unicode_decimal": 59263
+    },
+    {
+      "icon_id": "4765729",
+      "name": "down-circle",
+      "font_class": "down-circle",
+      "unicode": "e780",
+      "unicode_decimal": 59264
+    },
+    {
+      "icon_id": "4765738",
+      "name": "right-circle",
+      "font_class": "right-circle",
+      "unicode": "e783",
+      "unicode_decimal": 59267
+    }
+  ]
+}

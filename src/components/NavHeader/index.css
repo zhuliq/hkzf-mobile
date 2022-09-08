@@ -1,0 +1,12 @@
+.adm-nav-bar{
+    padding: 0;
+    background-color: rgba(192, 191, 191, 0.158);
+}
+.adm-nav-bar-title{
+    font-size: 36px;
+    font-weight: 510;
+}
+.adm-nav-bar .antd-mobile-icon{
+    font-size: 34px;
+    margin-left: 20px;
+}

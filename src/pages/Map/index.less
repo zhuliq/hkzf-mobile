@@ -1,0 +1,158 @@
+@keyframes houseList {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: calc((100% - 100px)/2);
+    }
+}
+@keyframes closeHouseList {
+    from {
+        height: calc((100% - 100px)/2);
+    }
+
+    to {
+        height: 0;
+    }
+}
+
+body {
+    height: 100%;
+}
+
+#container {
+    width: 100%;
+    height: calc(100% - 100px);
+}
+
+// 房源列表
+.houseList-Wrap {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+    // animation: houseList 0.8s ease-in-out forwards;
+
+    .houseListTitle {
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+        width: 100%;
+        background-color: rgb(208, 208, 208);
+
+        .houseListTitle-Left {
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 100px;
+            margin-left: 30px;
+        }
+
+        .houseListTitle-Right {
+            font-size: 35px;
+            font-weight: 400;
+            line-height: 100px;
+            margin-right: 30px;
+        }
+    }
+
+    .houseListContent {
+        overflow-y: scroll;
+
+        .houseList {
+            display: flex;
+            justify-content: space-evenly;
+            height: 200px;
+            width: 100%;
+            margin: 30px 0;
+
+            .houseListItem-Left {
+                height: 100%;
+
+                img {
+                    height: 100%;
+                }
+            }
+
+            .houseListItem-Right {
+                width: 480px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                margin-left: -20px;
+
+                .houseListItem-Right-Title {
+                    font-size: 35px;
+                    font-weight: 550;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                .houseListItem-Right-Desc {
+                    font-size: 25px;
+                    color: rgb(175, 175, 175);
+                }
+
+                .houseListItem-Right-Tags {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    overflow: hidden;
+                    .tag {
+                        white-space: nowrap;
+                        font-size: 25px;
+                        font-weight: 500;
+                        margin-right: 20px;
+                        padding: 2px 10px;
+                    }
+
+                    .tagStyle-0 {
+                        background-color: rgb(104, 253, 253);
+                        color: rgb(8, 173, 165);
+                    }
+
+                    .tagStyle-1 {
+                        background-color: rgb(171, 244, 195);
+                        color: rgb(62, 161, 105);
+                    }
+
+                    .tagStyle-2 {
+                        background-color: rgb(230, 188, 253);
+                        color: rgb(157, 0, 255);
+                    }
+
+                    .tagStyle-3 {
+                        background-color: rgb(250, 237, 178);
+                        color: rgb(240, 201, 4);
+                    }
+
+                    .tagStyle-4 {
+                        background-color: rgb(255, 197, 200);
+                        color: rgb(254, 4, 4);
+                    }
+                }
+
+                .houseListItem-Right-Price {
+                    display: flex;
+                    font-size: 25px;
+                    color: rgb(208, 17, 17);
+                    align-items: flex-end;
+
+                    .priceNum {
+                        font-size: 40px;
+                        font-weight: 600;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        hr {
+            width: 90%;
+        }
+    }
+}

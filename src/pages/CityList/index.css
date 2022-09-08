@@ -1,0 +1,36 @@
+/* 侧边栏 */
+.list{
+    position: relative;
+}
+.adm-side-bar{
+    position: fixed;
+    top: 100px;
+    right: 0;
+    width: 50px;
+    padding-top: 80px;
+}
+.adm-side-bar-items{
+    width: 50px;
+}
+.adm-side-bar-item{
+    padding: 0;
+    margin: 25px auto;
+    width: 45px;
+    height: 45px;
+}
+.adm-side-bar-item-title{
+    width: 45px;
+    height: 45px;
+    font-size: 26px;
+    text-align: center;
+    line-height: 60px;
+}
+.adm-side-bar-item-active{
+    background-color: rgba(58, 178, 58);
+    border-radius: 50%;
+    color: white;
+}
+/* 弹出层 */
+.adm-auto-center-content{
+    font-size: 35px;
+}
